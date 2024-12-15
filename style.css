@@ -305,8 +305,8 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
-    height: 450px;
+    width: 250px !important;
+    min-width: 250px !important;
     transition: transform 0.3s ease;
 }
 
@@ -366,4 +366,108 @@ main {
 .selling_product_footer .selling_product_footer h1:hover {
     font-size: 25px;
     margin-left: 100px;
+}
+
+.we_provid, .very_serious {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.very_serious{
+    padding: 0 50px;
+}
+
+.we_provid_l {
+    flex: 1;
+}
+
+.we_provid_r, .very_serious_l {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.we_provid_r h2, .very_serious_l h2{
+    font-size: 25px;
+    color: var(--text-color3);
+    font-weight: 500;
+}
+
+.we_provid_r h1, .very_serious_l h1{
+    font-size: 45px;
+}
+
+.we_provid_r p, .very_serious_l p{
+    font-size: 18px;
+    color: var(--text-color-2);
+}
+
+.we_provid_r h3, .very_serious_l h3{
+    font-size: 20px;
+    color: var(--text-color3);
+    font-weight: 400; 
+    width: 150px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.we_provid_r h3:hover, .very_serious_l h3:hover {
+    margin-left: 20px;
+}
+
+.we_provid_l img {
+    object-fit: cover;
+    -webkit-box-shadow: 4px 11px 39px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 11px 39px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 11px 39px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 0 20px 20px 0;
+    transition: 0.5s ease;
+}
+
+.we_provid_l img:hover{
+    margin-top: -50px;
+}
+
+.very_serious_r{
+    display: flex;
+}
+
+.very_serious_r_img_l{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.very_serious_r_img_l img{
+    object-fit: cover;
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.very_serious_r_img_l img:nth-child(1){
+    margin-top: -40px;
+}
+
+.very_serious_r_img_l img:hover{
+    width: 200px;
+    height: 300px;
+}
+
+.very_serious_r_img_r img{
+    width: 350px;
+    height: 400px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.very_serious_r_img_r img:hover{
+    width: 400px;
+    height: 450px;
 }
